@@ -117,7 +117,8 @@ li {
     margin: auto;
     width: 90%;
     padding: 0.5rem;
-    background-image: url("../recursos/fondo1.jpg");
+    /* background-image: url("../recursos/fondo1.jpg"); */
+    background-image: radial-gradient(rgba(142, 157, 162, 0.401), rgba(0, 0, 139, 0.421)), url("../recursos/fondo1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 25rem;
@@ -193,6 +194,11 @@ iframe {
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.tarjeta__titulo:hover {
+    transform: scale(1.5);
+    color: crimson;
 }
 
 .tarjeta__img {
@@ -279,6 +285,31 @@ iframe {
 
     100% {
         width: 250px;
+    }
+}
+
+.tarjeta__img__animacion {
+    animation-duration: 2s;
+    animation-name: animacion_img;
+}
+
+@keyframes animacion_img {
+    0% {
+        display: block;
+        margin: auto auto 1rem auto;
+        width: 2rem;
+    }
+
+    50% {
+        display: block;
+        margin: auto auto 1rem auto;
+        width: 3rem;
+    }
+
+    100% {
+        display: block;
+        margin: auto auto 1rem auto;
+        width: 4rem;
     }
 }
 
